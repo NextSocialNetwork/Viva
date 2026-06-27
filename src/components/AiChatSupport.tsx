@@ -12,7 +12,7 @@ export const AiChatSupport: React.FC<AiChatSupportProps> = ({ t, currentLang }) 
     {
       id: 'welcome-msg',
       role: 'model',
-      text: "Hello! Welcome to VIVA Mobile AI Concierge. I can answer questions about instant digital eSIM setup, newest iPhone 17 & Galaxy S26 pricing, T-Mobile 5G UC coverage in your city, or international calling to Russia, Spain, Lithuania, and Mexico! How may I assist you?",
+      text: "Hello! Welcome to VIVA Mobile AI Concierge. I can answer questions about instant digital eSIM setup, newest iPhone 17 & Galaxy S26 pricing, T-Mobile 5G UC coverage in your city, or our nationwide unlimited 5G plans! How may I assist you?",
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
     }
   ]);
@@ -77,7 +77,7 @@ export const AiChatSupport: React.FC<AiChatSupportProps> = ({ t, currentLang }) 
         {
           id: (Date.now() + 1).toString(),
           role: 'model',
-          text: "Hello! Our eSIM Card Kits ($10) activate instantly via QR code in under 2 minutes. We offer unlimited 5G plans starting at $25/mo, and our $55/mo Global Max plan includes FREE unlimited calling to Russia, Lithuania, Spain, Mexico, and EU! Which phone or plan are you looking at?",
+          text: "Hello! Our eSIM Card Kits ($10) activate instantly via QR code in under 2 minutes. We offer unlimited 5G plans starting at $25/mo, and our $55/mo Nationwide Max plan includes VIP priority data, 50GB hotspot, and free in-flight Wi-Fi! Which phone or plan are you looking at?",
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }
       ]);
@@ -226,7 +226,7 @@ export const AiChatSupport: React.FC<AiChatSupportProps> = ({ t, currentLang }) 
             {t.chat.title} <span className="text-[#FF007F] font-mono font-bold">www.MyVivaMobile.Com</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
-            Get instant answers regarding eSIM QR activation, 5G signal strengths, iPhone trade-ins, or international rates to Russia, Spain, and Lithuania.
+            Get instant answers regarding eSIM QR activation, 5G signal strengths, iPhone trade-ins, or nationwide unlimited plans across all 50 states.
           </p>
         </div>
 

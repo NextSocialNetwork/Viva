@@ -91,11 +91,11 @@ export const Hero: React.FC<HeroProps> = ({ t, onExploreStore, onCheckMap }) => 
 
           <div className="flex items-center gap-3 p-4 rounded-2xl bg-white/[0.03] border border-white/5 hover:border-[#FF6B00]/30 transition-colors">
             <div className="p-2.5 rounded-xl bg-[#FF6B00]/10 text-[#FF6B00]">
-              <Globe2 className="w-5 h-5" />
+              <Signal className="w-5 h-5" />
             </div>
             <div>
               <div className="text-sm font-bold text-white">{t.hero.perk2}</div>
-              <div className="text-xs text-gray-400 font-mono">Global Max Plan</div>
+              <div className="text-xs text-gray-400 font-mono">All 50 US States</div>
             </div>
           </div>
 

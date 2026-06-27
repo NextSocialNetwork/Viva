@@ -9,8 +9,8 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80',
     rating: 5,
     verified: true,
-    plan: 'VIVA Global Max ($55/mo)',
-    text: 'Nuostabus ryšys Čikagoje! eSIM aktyvavau per 2 minutes internetu. Smagiausia, kad galiu skambinti tėvams į Lietuvą visiškai nemokamai kiekvieną dieną. Rekomenduoju visai mūsų bendruomenei!'
+    plan: 'VIVA Nationwide Max ($55/mo)',
+    text: 'Nuostabus ryšys Čikagoje! eSIM aktyvavau per 2 minutes internetu. Neribotas greitasis 5G internetas veikia nepriekaištingai visoje JAV. Rekomenduoju!'
   },
   {
     id: 'test-2',
@@ -20,7 +20,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
     rating: 5,
     verified: true,
-    plan: 'VIVA Global Max ($55/mo)',
+    plan: 'VIVA Nationwide Max ($55/mo)',
     text: 'Скорость 5G просто невероятная — в Бруклине выдает больше 1000 Мбит/с! Взял новый iPhone 17 Pro Max в рассрочку без переплат. Очень удобно, что техподдержка говорит по-русски.'
   },
   {
@@ -32,7 +32,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     rating: 5,
     verified: true,
     plan: 'VIVA Family 4-Pack eSIM',
-    text: '¡Increíble servicio! Cambiamos las 4 líneas de la familia con el Kit eSIM. Pagamos mucho menos y tenemos cobertura completa de T-Mobile en Florida y cuando viajamos a Madrid y Cancún.'
+    text: '¡Increíble servicio! Cambiamos las 4 líneas de la familia con el Kit eSIM. Pagamos mucho menos y tenemos cobertura completa y veloz de 5G en Florida y en todo el país.'
   },
   {
     id: 'test-4',

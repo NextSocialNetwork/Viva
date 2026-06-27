@@ -38,8 +38,8 @@ Key VIVA Mobile facts you know:
 2. eSIM Kits: Instant activation QR codes delivered digitally in 2 minutes. No physical store visit needed. Compatible with all unlocked eSIM phones. Kit price: $10 (credited towards first month).
 3. Unlimited 5G Plans:
    - VIVA Connect ($25/mo): Unlimited 5G Data, Talk & Text nationwide, 5GB Hotspot.
-   - VIVA Unlimited Ultra ($40/mo): Unlimited Premium 5G Data, 25GB Hotspot, Free Calling to Mexico & Canada.
-   - VIVA Global Max ($55/mo): Unlimited Premium 5G Data, 50GB Hotspot, FREE Unlimited Calling & SMS to Russia, Spain, Lithuania, Ukraine, Poland, and EU countries. Free in-flight Wi-Fi.
+   - VIVA Unlimited Ultra ($40/mo): Unlimited Priority 5G Data, 25GB Hotspot, Unthrottled HD Video Streaming.
+   - VIVA Nationwide Max ($55/mo): Unlimited Priority 5G UC Data nationwide across all 50 states, 50GB Hotspot, Free in-flight Wi-Fi on major US airlines. VIP support in 4 languages.
 4. Newest Phone Models in Store:
    - Apple: iPhone 17 Pro Max ($1199), iPhone 17 Pro ($999), iPhone 17 ($799), iPhone 16 Pro Max ($1099), iPhone SE 4 ($499).
    - Samsung: Galaxy S26 Ultra AI ($1299), Galaxy S26+ ($999), Galaxy Z Fold 7 ($1799), Galaxy Z Flip 7 ($1099), Galaxy A56 5G ($449).
@@ -91,11 +91,11 @@ app.post('/api/chat', async (req, res) => {
       if (lower.includes('esim') || lower.includes('activate')) {
         reply += "Our eSIM Card Kits activate instantly! Simply order the $10 eSIM Kit, scan the QR code we email you, and you'll be connected to our nationwide 5G T-Mobile network in under 2 minutes.";
       } else if (lower.includes('plan') || lower.includes('price') || lower.includes('cost')) {
-        reply += "We offer 3 incredible unlimited plans: VIVA Connect ($25/mo), VIVA Unlimited Ultra ($40/mo), and VIVA Global Max ($55/mo with free unlimited calling to Russia, Lithuania, Spain, Mexico, and EU!).";
+        reply += "We offer 3 incredible unlimited plans: VIVA Connect ($25/mo), VIVA Unlimited Ultra ($40/mo), and VIVA Nationwide Max ($55/mo with unthrottled priority 5G UC data, 50GB hotspot, and free in-flight Wi-Fi!).";
       } else if (lower.includes('iphone') || lower.includes('samsung') || lower.includes('phone')) {
         reply += "We have the newest 2026 models in stock! Including the iPhone 17 Pro Max ($1199), iPhone 17 ($799), Samsung Galaxy S26 Ultra AI ($1299), and Galaxy Z Fold 7 ($1799). All available with 0% financing.";
       } else if (lower.includes('rus') || lower.includes('рус') || lower.includes('lit') || lower.includes('esp')) {
-        reply += "Да! ¡Sí! Taip! We proudly support our communities in Russian, Spanish, and Lithuanian with native customer service and free international calling on our Global Max plan.";
+        reply += "Да! ¡Sí! Taip! We proudly support our communities in Russian, Spanish, and Lithuanian with native customer service and dedicated nationwide coverage.";
       } else {
         reply += "I can help you check 5G coverage in your city, choose a new iPhone 17 or Galaxy S26, or set up an instant digital eSIM. What would you like to explore?";
       }

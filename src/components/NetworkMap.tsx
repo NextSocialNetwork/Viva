@@ -162,10 +162,70 @@ export const NetworkMap: React.FC<NetworkMapProps> = ({ t }) => {
               
               {/* US Map SVG Shape / Silhouette representation */}
               <div className="relative w-full h-full flex items-center justify-center select-none">
-                <div className="absolute inset-4 border border-white/10 rounded-2xl flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-4 border border-white/10 rounded-2xl flex items-center justify-center overflow-hidden bg-[#070312]">
                   
                   {/* Glowing Coverage Waves */}
-                  <div className="absolute w-full h-full bg-gradient-to-tr from-[#FF007F]/20 via-[#FF6B00]/15 to-[#D946EF]/20 blur-2xl" />
+                  <div className="absolute w-full h-full bg-gradient-to-tr from-[#FF007F]/20 via-[#FF6B00]/15 to-[#D946EF]/20 blur-3xl pointer-events-none opacity-60" />
+
+                  {/* United States Vector Map Graphic */}
+                  <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-85" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="usMapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#1e0c38" stopOpacity="0.95" />
+                        <stop offset="50%" stopColor="#130626" stopOpacity="0.9" />
+                        <stop offset="100%" stopColor="#240c42" stopOpacity="0.95" />
+                      </linearGradient>
+                      <pattern id="hexGrid" width="4" height="4" patternUnits="userSpaceOnUse">
+                        <path d="M 4 0 L 0 0 0 4" fill="none" stroke="#FF007F" strokeWidth="0.15" strokeOpacity="0.25" />
+                      </pattern>
+                    </defs>
+                    
+                    {/* Contiguous USA Outer Silhouette */}
+                    <path
+                      d="M 10 13 L 24 12 L 36 11 L 48 12 L 58 14 L 64 18 L 66 26 L 72 22 L 78 18 L 88 15 L 92 22 L 90 27 L 86 33 L 83 40 L 82 48 L 79 58 L 81 72 L 83 90 L 78 91 L 75 80 L 70 75 L 64 76 L 60 78 L 54 82 L 52 90 L 45 80 L 36 75 L 25 74 L 16 72 L 12 64 L 8 48 L 7 34 L 8 20 Z"
+                      fill="url(#usMapGrad)"
+                      stroke="#FF007F"
+                      strokeWidth="0.5"
+                      strokeOpacity="0.7"
+                    />
+
+                    {/* Overlay Tech Pattern Grid inside USA */}
+                    <path
+                      d="M 10 13 L 24 12 L 36 11 L 48 12 L 58 14 L 64 18 L 66 26 L 72 22 L 78 18 L 88 15 L 92 22 L 90 27 L 86 33 L 83 40 L 82 48 L 79 58 L 81 72 L 83 90 L 78 91 L 75 80 L 70 75 L 64 76 L 60 78 L 54 82 L 52 90 L 45 80 L 36 75 L 25 74 L 16 72 L 12 64 L 8 48 L 7 34 L 8 20 Z"
+                      fill="url(#hexGrid)"
+                    />
+
+                    {/* Regional Internal Border Accents (West, Midwest, South, East) */}
+                    <path d="M 28 11 L 25 74" stroke="#ffffff" strokeWidth="0.2" strokeDasharray="1.5 1.5" strokeOpacity="0.15" />
+                    <path d="M 52 13 L 54 82" stroke="#ffffff" strokeWidth="0.2" strokeDasharray="1.5 1.5" strokeOpacity="0.15" />
+                    <path d="M 76 18 L 64 76" stroke="#ffffff" strokeWidth="0.2" strokeDasharray="1.5 1.5" strokeOpacity="0.15" />
+                    <path d="M 28 42 L 83 40" stroke="#ffffff" strokeWidth="0.2" strokeDasharray="1.5 1.5" strokeOpacity="0.15" />
+
+                    {/* 5G Ultra Capacity High-Speed Backbone Routes */}
+                    <g stroke="#FF007F" strokeWidth="0.35" strokeOpacity="0.5" strokeDasharray="1 1">
+                      <line x1="13" y1="15" x2="8" y2="48" />
+                      <line x1="8" y1="48" x2="12" y2="64" />
+                      <line x1="12" y1="64" x2="38" y2="45" />
+                      <line x1="12" y1="64" x2="54" y2="72" />
+                      <line x1="13" y1="15" x2="65" y2="34" />
+                      <line x1="38" y1="45" x2="65" y2="34" />
+                      <line x1="38" y1="45" x2="54" y2="72" />
+                      <line x1="54" y1="72" x2="73" y2="68" />
+                      <line x1="65" y1="34" x2="73" y2="68" />
+                      <line x1="65" y1="34" x2="84" y2="35" />
+                      <line x1="84" y1="35" x2="89" y2="28" />
+                      <line x1="84" y1="35" x2="73" y2="68" />
+                      <line x1="73" y1="68" x2="81" y2="88" />
+                    </g>
+                    
+                    {/* Animated Data Pulses along backbone routes */}
+                    <g stroke="#D946EF" strokeWidth="0.6" strokeOpacity="0.8" strokeDasharray="3 8" className="animate-pulse">
+                      <line x1="84" y1="35" x2="65" y2="34" />
+                      <line x1="65" y1="34" x2="13" y2="15" />
+                      <line x1="54" y1="72" x2="73" y2="68" />
+                      <line x1="12" y1="64" x2="38" y2="45" />
+                    </g>
+                  </svg>
 
                   {/* Coverage Legend overlay */}
                   <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10 text-[10px] space-y-1 z-20">
